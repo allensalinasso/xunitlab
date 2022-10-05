@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1703.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetLabs", "DotNetLabs\DotNetLabs.csproj", "{8AFBEE0C-498D-4DBE-914C-DF3A9B8B9FCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetLabs.Business", "DotNetLabs.Business\DotNetLabs.Business.csproj", "{459EA198-76EE-46FA-BF51-3B0501D26E0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AFBEE0C-498D-4DBE-914C-DF3A9B8B9FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AFBEE0C-498D-4DBE-914C-DF3A9B8B9FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AFBEE0C-498D-4DBE-914C-DF3A9B8B9FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AFBEE0C-498D-4DBE-914C-DF3A9B8B9FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{459EA198-76EE-46FA-BF51-3B0501D26E0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{459EA198-76EE-46FA-BF51-3B0501D26E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{459EA198-76EE-46FA-BF51-3B0501D26E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{459EA198-76EE-46FA-BF51-3B0501D26E0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6D9DD05-A613-4D75-9175-A25C0E0003F7}
+	EndGlobalSection
+EndGlobal
