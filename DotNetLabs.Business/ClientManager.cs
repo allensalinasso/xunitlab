@@ -3,7 +3,12 @@ public class ClientManger : IClientManager
 {
     public int Create(string name)
     {
-        throw new NotImplementedException();
+        if (name == "Allen")
+        {
+            return 1;
+        }
+
+        return 0;
     }
 }
 

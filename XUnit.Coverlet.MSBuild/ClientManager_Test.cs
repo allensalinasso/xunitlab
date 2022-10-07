@@ -1,6 +1,6 @@
 namespace XUnit.Coverlet.MSBuild;
 
-public class UnitTest1
+public class ClientManager_Test
 {
     [Fact]
     public void Test1()

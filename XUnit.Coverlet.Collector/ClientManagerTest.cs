@@ -2,7 +2,7 @@ using DotNetLabs.Business;
 
 namespace XUnit.Coverlet.Collector;
 
-public class UnitTest1
+public class ClientManagerTest
 {
     [Fact]
     public void Test1()
@@ -11,6 +11,6 @@ public class UnitTest1
             
         int res = c.Create("Allen");
 
-        Assert.True(res > 0);
+        Assert.True(res <= 0);
     }
 }
