@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 25.0.1703.6
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetLabs", "DotNetLabs\DotNetLabs.csproj", "{8AFBEE0C-498D-4DBE-914C-DF3A9B8B9FCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetLabs", "DotNetLabs\DotNetLabs.csproj", "{8AFBEE0C-498D-4DBE-914C-DF3A9B8B9FCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetLabs.Business", "DotNetLabs.Business\DotNetLabs.Business.csproj", "{459EA198-76EE-46FA-BF51-3B0501D26E0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetLabs.Business", "DotNetLabs.Business\DotNetLabs.Business.csproj", "{459EA198-76EE-46FA-BF51-3B0501D26E0B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnit.Coverlet.MSBuild", "XUnit.Coverlet.MSBuild\XUnit.Coverlet.MSBuild.csproj", "{9CB49FC7-F936-4082-90AD-CB478B0B5FFE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnit.Coverlet.Collector", "XUnit.Coverlet.Collector\XUnit.Coverlet.Collector.csproj", "{E3DB157E-7E4C-4329-9E64-DA52C6B42457}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{459EA198-76EE-46FA-BF51-3B0501D26E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{459EA198-76EE-46FA-BF51-3B0501D26E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{459EA198-76EE-46FA-BF51-3B0501D26E0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CB49FC7-F936-4082-90AD-CB478B0B5FFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CB49FC7-F936-4082-90AD-CB478B0B5FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CB49FC7-F936-4082-90AD-CB478B0B5FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CB49FC7-F936-4082-90AD-CB478B0B5FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3DB157E-7E4C-4329-9E64-DA52C6B42457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3DB157E-7E4C-4329-9E64-DA52C6B42457}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3DB157E-7E4C-4329-9E64-DA52C6B42457}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3DB157E-7E4C-4329-9E64-DA52C6B42457}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
