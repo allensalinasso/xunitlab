@@ -4,9 +4,9 @@ namespace XUnit.Coverlet.Collector;
 
 public class ClientManagerTest
 {
-    readonly ClientManger _service;
+    readonly ClientManager _service;
 
-    public ClientManagerTest() => _service = new ClientManger();
+    public ClientManagerTest() => _service = new ClientManager();
 
     [
         Theory,

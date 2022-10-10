@@ -1,5 +1,5 @@
 ﻿namespace DotNetLabs.Business;
-public class ClientManger : IClientManager
+public class ClientManager : IClientManager
 {
     public int Create(string name)
     {
