@@ -44,5 +44,9 @@ jobs:
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"allensalinasso_xunitlab" /o:"allensalinasso" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
             dotnet build --no-incremental
-            dotnet.exe test --collect:"XPlat Code Coverage"
+            coverlet XUnit.Coverlet.Collector
+                --target "dotnet" 
+                --targetargs "test --no-build"
+                -f=opencover 
+                -o="coverage.xml"
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
