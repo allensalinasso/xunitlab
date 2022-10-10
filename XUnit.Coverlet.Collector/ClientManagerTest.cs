@@ -4,13 +4,18 @@ namespace XUnit.Coverlet.Collector;
 
 public class ClientManagerTest
 {
-    [Fact]
-    public void Test1()
-    {
-        IClientManager c = new ClientManger();
-            
-        int res = c.Create("Allen");
+    readonly ClientManger _service;
 
-        Assert.True(res <= 0);
+    public ClientManagerTest() => _service = new ClientManger();
+
+    [
+        Theory,
+        InlineData("Allen"), InlineData("Santiago")
+    ]
+    public void Test1(string name)
+    {            
+        int res = _service.Create(name);
+
+        Assert.True(res > 0, "Invalid name");
     }
 }
