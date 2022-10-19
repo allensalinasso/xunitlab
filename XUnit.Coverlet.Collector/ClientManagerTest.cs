@@ -10,12 +10,12 @@ public class ClientManagerTest
 
     [
         Theory,
-        InlineData("Allen"), InlineData("Santiago")
+        InlineData("Allen"), InlineData("Andrea")
     ]
-    public void Test1(string name)
+    public void CreateUser_NameStartsWithA_Returns1(string name)
     {            
         int res = _service.Create(name);
 
-        Assert.True(res > 0, "Invalid name");
+        Assert.True(res == 1, "Invalid name");
     }
 }
