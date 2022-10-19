@@ -40,11 +40,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        shell: powershell
-        run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"allensalinasso_xunitlab" /o:"allensalinasso" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-            dotnet build --no-incremental
-            dotnet test --no-build --verbosity normal
+        uses: highbyte/sonarscan-dotnet@1.0.2
+        with:
+        # The key of the SonarQube project
+            sonarProjectKey: allensalinasso_xunitlab
+            # The name of the SonarQube project
+            sonarProjectName: xunitlab
+            # The name of the SonarQube organization in SonarCloud. For hosted SonarQube, skip this setting.
+            sonarOrganization: allensalinasso
+            # Optional command arguments to dotnet test
             dotnetTestArguments: --logger trx --collect:"XPlat Code Coverage" --settings coverlet.runsettings -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=opencover
+            # Optional extra command arguments the the SonarScanner 'begin' command
             sonarBeginArguments: /d:sonar.exclusions="**/*.html, **/*.cshtml, **/*.css" -d:sonar.cs.opencover.reportsPaths="**/TestResults/**/coverage.opencover.xml" -d:sonar.cs.vstest.reportsPaths="**/TestResults/*.trx"
-          .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
