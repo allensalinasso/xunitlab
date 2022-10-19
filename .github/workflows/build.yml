@@ -32,7 +32,7 @@ jobs:
       # The key of the SonarQube project
           sonarProjectKey: allensalinasso_xunitlab
           # The name of the SonarQube project
-          sonarProjectName: xunitlab
+          sonarProjectName: allensalinasso_xunitlab
           # The name of the SonarQube organization in SonarCloud. For hosted SonarQube, skip this setting.
           sonarOrganization: allensalinasso
           # Optional command arguments to dotnet test
